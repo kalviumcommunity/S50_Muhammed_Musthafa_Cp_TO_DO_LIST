@@ -8,3 +8,148 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.title {
+  font-family: "Poppins", sans-serif;
+  margin-top: 50px;
+  text-align: center;
+  font-size: 3rem;
+  text-shadow: 0 2px 2px gray;
+}
+
+.input-container{
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.input{
+  height: 48px;
+  float: center;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  width: 400px;
+  padding-left: 20px;
+  border: 2px solid lightgray;
+}
+
+button{
+  width: 100px;
+  background-color: #131315;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  height: 50px;
+}
+
+button:hover{
+  cursor: pointer;
+}
+
+.list{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.list-container{
+  text-align: center;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-item{
+  margin: 10px;
+  font-family: 'Trebuchet MS', sans-serif ;
+  padding: 10px;
+  width: 400px;
+  border: 2px solid lightgray;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.list-item input{
+  width: 20px;
+  height: 20px;
+}
+
+.empty-list-message{
+  font-family: 'Trebuchet MS', sans-serif ;
+  font-size: 30px;
+  font-weight: 300;
+  color: gray;
+  text-align: center;
+  margin-top: 40px;
+}
+
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .input-container {
+    margin-top: 1rem;
+  }
+
+  .input {
+    width: 300px;
+    height: 40px;
+    font-size: 14px;
+  }
+
+  button {
+    width: 80px;
+    height: 45px;
+    font-size: 16px;
+  }
+
+  .list-item {
+    width: 300px;
+    padding: 8px;
+    gap: 8px;
+  }
+
+  .list {
+    font-size: 18px;
+  }
+
+  .empty-list-message {
+    font-size: 25px;
+  }
+}
+
+/* For very small screens like mobile phones */
+@media (max-width: 480px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .input {
+    width: 250px;
+    height: 36px;
+    font-size: 14px;
+  }
+
+  button {
+    width: 70px;
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .list-item {
+    width: 250px;
+    padding: 8px;
+  }
+
+  .empty-list-message {
+    font-size: 20px;
+  }
+}
